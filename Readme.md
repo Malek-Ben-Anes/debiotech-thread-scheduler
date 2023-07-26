@@ -14,10 +14,10 @@ In this README, you will find information on how to get started with the project
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
+    - [Docker](#Docker)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
@@ -52,10 +52,26 @@ Step-by-step instructions on how to install the project on the user's local mach
 
 *mvn clean install*
 
-3. Launching command:
+4. Launching command:
+
 *cd target*
+
 *java -jar debiotech-scheduler-1.0.jar*
 
+## Docker
+To facilitate deployment and ensure consistency across different environments, this project includes Docker support. Docker allows you to package your application and its dependencies into a container, providing an isolated and portable environment.
+
+### Building the Docker Image
+To build the Docker image for this project, make sure you have Docker installed on your machine. Then, open a terminal or command prompt and navigate to the root directory of the project. Use the following command to build the Docker image:
+
+*docker build -t debiotech-scheduler-1.0.jar .*
+
+### Running the Docker Image
+After building the Docker image, you can run the application inside a Docker container. To run the image in interactive mode and provide input to the command, use the following command:
+
+*docker run -it -p 8080:8080 debiotech-scheduler-1.0.jar*
+
+This command allocates a pseudo-TTY and allows you to interact with the application as if it were running on your local machine. If the application expects input from the command line, you can provide it directly from your terminal.
 
 ## Usage
 
