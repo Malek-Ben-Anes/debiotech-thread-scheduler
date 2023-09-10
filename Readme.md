@@ -14,6 +14,7 @@ In this README, you will find information on how to get started with the project
 
 ## Table of Contents
 
+- [Statement](#statement)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
@@ -22,6 +23,48 @@ In this README, you will find information on how to get started with the project
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
+
+### statement
+
+A device must schedule 5 tasks with the following constraints:
+ - Task A must run every second 
+ - Task B must run every 5 seconds 
+ - Task C must run every 5 seconds
+ - Task D must run every 10 seconds
+ - Task E must run every 10 seconds 
+ - There must be no more than 2 tasks running at the same time 
+ - It is OK if tasks B and C run for the first time before the first 5s elapsed
+ - It is OK if tasks D and E run for the first time before the first 10s elapsed
+
+Your task is to write the device scheduler based on a system timer.
+
+### Output Format
+The output of the program must be in the form:
+
+**Time (sec) -> Tasks**  \
+1 -> A  \
+2 -> A B \
+3 -> A C  \
+4 -> A D  \
+5 -> A E  \
+6 -> A  \
+7 -> A B  \
+8 -> A C  \
+9 -> A  \
+10 -> A  \
+11 -> A  \
+12 -> A B  \
+13 -> A C  \
+14 -> A D  \
+15 -> A E  \
+16 -> A  \
+17 -> A B  \
+18 -> A C  \
+19 -> A  \
+20 -> A  \
+
+**Note:** You can use any language you want on Windows, Linux or MacOS platform.
+Instructions on how to compile and run the program must be provided.
 
 ## Getting Started
 
