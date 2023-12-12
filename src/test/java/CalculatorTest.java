@@ -4,6 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+    @Test
+    void sommeTest_nouvelle_fonctionnalite() {
+        var x = 0;
+        var y = 0;
+
+        var resultat = Calculator.somme(x, y);
+
+        assertEquals(1, resultat);
+    }
+
     // cas de test
     @Test
     void sommeTest() {
